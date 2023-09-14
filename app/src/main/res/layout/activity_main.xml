@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/headline"
+            android:gravity="fill_vertical"
+            android:text="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_to_list_of_directories"
+                style="@style/navButton"
+                android:text="@string/directories_list_headline"
+                android:textColor="@color/black"
+                android:background="@drawable/list_button_active"/>
+
+            <Button
+                android:id="@+id/button_to_list_of_files"
+                style="@style/navButton"
+                android:text="@string/files_list_headline"
+                android:textColor="@color/white"
+                android:background="@drawable/list_button_inactive" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/list_of_directories"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"></ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrease_button"
+                style="@style/changeValueButton"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_left"
+                android:text="@string/decrease_button" />
+
+            <TextView
+                android:id="@+id/count_of_biggest_files"
+                style="@style/value"
+                android:layout_marginStart="46dp"
+                android:background="@drawable/rectangle"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/increase_button"
+                style="@style/changeValueButton"
+                android:layout_marginStart="102dp"
+                android:background="@drawable/button_right"
+                android:text="@string/increase_button" />
+
+            <Button
+                android:id="@+id/find_button"
+                style="@style/actionButton"
+                android:background="@drawable/find_button"
+                android:text="@string/find_button" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/add_button"
+        android:contentDescription="@string/add_directory"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BigFileFinder</string>
+    <string name="directories_list_headline">Directories</string>
+    <string name="files_list_headline">Files</string>
+    <string name="increase_button">+</string>
+    <string name="decrease_button">-</string>
+    <string name="find_button">SCAN</string>
+    <string name="add_directory">add directory</string>
+    <string name="zero">0</string>
+    <string name="channel_name">list</string>
+    <string name="channel_description">N biggest files founded</string>
+</resources>
